@@ -25,8 +25,8 @@ driver = webdriver.Chrome(service=service_obj, options=options)
 driver.minimize_window()
 
 # Step 1: Ask the user for a stock number
-stock_number = input("Enter stock number (e.g. 00001.hk): ")
-print('Initializing... please wait, be patient...')
+stock_number = input("請在欄位輸入股票代號 (例如 00001.hk): ")
+print('正在初始化及搜尋資訊中...請耐心等待...')
 
 # Extract the first five digits of the stock code
 stock_code_prefix = stock_number[:5]
